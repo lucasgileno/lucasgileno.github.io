@@ -3,36 +3,52 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-div { 
-  background-color: gray;
-  padding: 480 px;
+h1 {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+  
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
 }
 img {
     min-widht: 100 %;
     height: auto;
+  padding: 480 px;
 }
     h1 {
   text-shadow: 2 px 0 3 px #ff00ff;
-  
+    padding: 480 px;
   color:red;
 }
     
     h2 {
   text-shadow: 2 px 0 3 px #ff0080;
-        
+  padding: 480 px;
   color:#ff0066;
 }
  table{ 
-     background-color: #f542c8;
+     background-color: #9900cc;
  }
 p {
   text-transform: uppercase;
+   background-color: cc33ff;
+  padding: 480 px;
 }
 @media screen and (min-width: 480 px) {
-  div.example {
+p {
     font-size: 80 px;
   }
-  a {  font-size: 80 px;
+  h1 {  font-size: 80 px;
     color: red;
     }
 }
